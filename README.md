@@ -46,3 +46,9 @@ pytest -q
 ```
 
 The current release is intentionally a transparent baseline. Replace demo data with a documented, licensed dataset before drawing scientific or business conclusions.
+
+## Reproducibility notes
+
+The repository intentionally starts with deterministic, dependency-light building blocks. No proprietary datasets or company-internal claims are included. Any future benchmark should report dataset provenance, split logic, seed control, compute environment, and known limitations.
+
+[Roadmap](docs/ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
