@@ -1,0 +1,8 @@
+flowchart LR
+    A["Inference payload + schema"] --> B["Validate contract"]
+    B --> C["Model + monitoring checks"]
+    C --> D["Risk decision / alert"]
+    D --> E["Drift / latency / rollback"]
+    E --> F["ML Systems Blueprints
+Evaluation"]
+    F -. feedback .-> C
