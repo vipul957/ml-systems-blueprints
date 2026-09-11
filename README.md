@@ -4,6 +4,33 @@
 
 > **ML Systems Blueprints** is a production-minded reliability utilities for research-to-inference workflows.
 
+## Start here
+
+**In one sentence:** Turn research models into observable, testable, deployment-ready systems.
+
+| If you want to... | Open this first |
+|---|---|
+| Understand the method | [`src/ml_systems_blueprints/monitoring.py`](src/ml_systems_blueprints/monitoring.py) |
+| See the second reusable utility | [`src/ml_systems_blueprints/contracts.py`](src/ml_systems_blueprints/contracts.py) |
+| Run a tiny example | [`examples/quick_demo.py`](examples/quick_demo.py) |
+| Understand the next milestone | [`docs/ROADMAP.md`](docs/ROADMAP.md) |
+| Check correctness | [`tests/`](tests/) and the CI badge above |
+
+### System flow
+
+```mermaid
+flowchart LR
+    A[Domain input] --> B[Validated contract]
+    B --> C[model]
+    C --> D[Measured output]
+    D --> E[Limitations and next experiment]
+```
+
+### What is implemented now
+
+The repository currently contains a dependency-light, deterministic baseline with tests. It is intentionally small enough to inspect line by line. The next research layer should preserve the same input contract and evaluation protocol rather than replacing the baseline with an opaque demo.
+
+
 ## Problem statement
 
 Make drift, ownership, and operational assumptions visible before deployment.
