@@ -35,3 +35,14 @@ Problem families relevant to **Tesla, NVIDIA, Microsoft, Amazon** include effici
 ## License
 
 MIT
+
+## Quick start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+pytest -q
+```
+
+The current release is intentionally a transparent baseline. Replace demo data with a documented, licensed dataset before drawing scientific or business conclusions.
